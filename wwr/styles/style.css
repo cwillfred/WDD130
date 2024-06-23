@@ -267,4 +267,26 @@ nav {
         margin-top: 25px;
     }
 }
+
+.river-info {
+    margin: 20px;
+}
+
+.river-info article {
+    margin-bottom: 40px;
+    text-align: left; /* Align text to the left */
+}
+
+.river-info h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.river-info img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
             
