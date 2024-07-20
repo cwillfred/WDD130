@@ -13,12 +13,15 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    color: #001427;
 }
 
 #content {
     max-width: 1280px;
     margin: 0 auto;
     padding-left: 180px;
+    padding-top: 20px;
 }
 
 header {
@@ -26,7 +29,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     color: #F4D58D;
     position: relative;
     text-align: center;
@@ -35,12 +38,12 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 #logo_link {
     padding-top: 5px;
-    margin-left: 20px;
     position: absolute;
     left: 20px;
 }
@@ -50,7 +53,6 @@ header .logo {
 }
 
 header nav {
-    margin-right: 20px;
     position: absolute;
     right: 20px;
 }
@@ -59,6 +61,7 @@ header nav a {
     color: #F4D58D;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s;
 }
 
 header nav a:hover {
@@ -67,7 +70,7 @@ header nav a:hover {
 
 .sidebar {
     height: 100%;
-    width: 160px;
+    width: 175px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -78,15 +81,17 @@ header nav a:hover {
 }
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 1.2em;
+    color: #F4D58D;
     display: block;
+    transition: color 0.3s;
 }
 
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #F4D58D;
+    background-color: #BF0604;
 }
 
 @media screen and (max-height: 450px) {
@@ -128,10 +133,12 @@ header nav a:hover {
     text-align: center;
     padding: 50px 20px;
     color: #F4D58D;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .home-title {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
     color: #BF0604;
@@ -139,6 +146,7 @@ header nav a:hover {
 
 #home-msg h4 {
     color: #001427;
+    font-size: 1.2em;
 }
 
 .button-box {
@@ -149,10 +157,12 @@ header nav a:hover {
 .explore {
     background: #BF0604;
     color: #F4D58D;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-decoration: none;
     margin: 0 10px;
     border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
 }
 
 .explore:hover {
@@ -176,9 +186,14 @@ header nav a:hover {
 .recommendation-card, .content-card {
     background: #F4D58D;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.recommendation-card:hover, .content-card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
@@ -191,13 +206,14 @@ header nav a:hover {
 
 .content-card h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #BF0604;
     margin-bottom: 10px;
 }
 
 .content-card p {
     color: #001427;
+    font-size: 1.1em;
 }
 
 footer {
@@ -206,6 +222,7 @@ footer {
     text-align: center;
     padding: 25px 50px;
     margin-top: 50px;
+    border-top: 3px solid #001427;
 }
 
 footer p {
@@ -216,10 +233,11 @@ footer p {
 footer a {
     color: #F4D58D;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #BF0604;
+    color: #001427;
     background-color: #F4D58D;
 }
 
@@ -227,4 +245,10 @@ footer .social img {
     padding-top: 15px;
     height: 30px;
     width: 30px;
+    transition: transform 0.3s;
 }
+
+footer .social img:hover {
+    transform: scale(1.2);
+}
+
